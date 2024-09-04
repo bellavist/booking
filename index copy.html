@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bella Vista - Restaurant Booking</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Bella Vista</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#booking" role="button">Book a Table</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <div class="grid">
+            <section>
+                <hgroup>
+                    <h2>Welcome to Bella Vista</h2>
+                    <h3>Italian Kitchen & Bar</h3>
+                </hgroup>
+                <p>Enjoy a fine dining experience at Bella Vista, where we serve authentic Italian cuisine in a modern setting. Book your table today!</p>
+                <figure>
+                    <img src="https://your-image-link.jpg" alt="Bella Vista Restaurant" />
+                    <figcaption><a href="#" target="_blank">View our restaurant</a></figcaption>
+                </figure>
+                <h3>Our Menu</h3>
+                <p>We offer a wide range of traditional Italian dishes, from pasta and pizzas to fine wines and desserts. Check out our menu and plan your perfect meal.</p>
+            </section>
+        </div>
+    </main>
+
+    <section id="booking" aria-label="Booking Form">
+        <div class="container">
+            <article>
+                <hgroup>
+                    <h2>Book a Table</h2>
+                    <h3>Reserve your dining experience</h3>
+                </hgroup>
+                <form class="grid">
+                    <input type="text" id="name" name="name" placeholder="Your Name" aria-label="Name" required />
+                    <input type="email" id="email" name="email" placeholder="Your Email" aria-label="Email" required />
+                    <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" aria-label="Phone" required />
+                    <input type="date" id="date" name="date" aria-label="Reservation Date" required />
+                    <input type="time" id="time" name="time" aria-label="Reservation Time" required />
+                    <input type="number" id="guests" name="guests" placeholder="Number of Guests" aria-label="Guests" required min="1" max="10" />
+                    <button type="submit" onclick="event.preventDefault()">Book Now</button>
+                </form>
+            </article>
+        </div>
+    </section>
+
+    <footer class="container">
+        <small><a href="#">Contact Us</a> • <a href="#">Privacy Policy</a></small>
+    </footer>
+</body>
+</html>
